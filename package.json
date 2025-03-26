@@ -5,11 +5,15 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "deploy": "astro build && gh-pages -d dist",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "astro": "^5.5.4",
     "mad-magnitude": "file:"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
